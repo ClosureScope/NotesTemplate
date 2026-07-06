@@ -1,25 +1,44 @@
-# NotesTemplate
+<div align="center">
 
-Starter template for a Typst course-notes repository. Click **"Use this
-template"** on GitHub to create a new course repo, then:
+# Course Name
 
-1. **Edit `course.toml`** — set `name_en`, `name_zh`, `code` for your course.
-2. **Rename / write `notebook.typ`** — this is your actual notes file.
-   (You can have multiple `.typ` files; all except `template.typ` get compiled.)
-3. **Push.** CI (via [`NotesCI`](https://github.com/ClosureScope/NotesCI)) will
-   compile the PDF, publish it to Releases, and regenerate this README.
+课程中文名 · `COURSE0000` · SJTU
 
-## What's in here
+**Author Closure**
 
-| File | Purpose |
-|------|---------|
-| `course.toml` | Course metadata — the only file you routinely edit |
-| `notebook.typ` | Your notes (starter stub) |
-| `template.typ` | Styling template, imported by the notes |
-| `.github/workflows/auto_release.yml` | 6-line stub that calls the reusable workflow in `NotesCI` |
+[![Auto Release](https://github.com/ClosureScope/NotesTemplate/actions/workflows/auto_release.yml/badge.svg)](https://github.com/ClosureScope/NotesTemplate/actions/workflows/auto_release.yml)
+[![Latest PDF](https://img.shields.io/badge/download-latest%20PDF-red)](https://github.com/ClosureScope/NotesTemplate/releases/latest)
+[![Made with Typst](https://img.shields.io/badge/made%20with-Typst-239dad)](https://typst.app/)
 
-## Requirements
+</div>
 
-The build logic lives in the public repo `ClosureScope/NotesCI`. This README
-(and the release name) are generated from `course.toml`, so you never edit them
-by hand.
+---
+
+Course notes for **Course Name（课程中文名, `COURSE0000`）** at **SJTU**,
+typeset in [Typst](https://typst.app/) and continuously built into a PDF by CI.
+
+## Download
+
+The latest PDF is built automatically on every push and published to
+[**Releases → latest**](https://github.com/ClosureScope/NotesTemplate/releases/latest). No need to clone or compile anything.
+
+## Repository layout
+
+| File | Description |
+|------|-------------|
+| [`notebook.typ`](notebook.typ) | Source of the notes, written in Typst |
+| [`template.typ`](template.typ) | Styling template (imported by the notes, not compiled on its own) |
+| [`course.toml`](course.toml) | Course metadata — the single source of truth for this README and the release workflow |
+| `*.pdf` | Compiled output — built by CI, get it from [Releases](https://github.com/ClosureScope/NotesTemplate/releases/latest) |
+
+## Building locally
+
+```bash
+typst compile notebook.typ
+```
+
+---
+
+<div align="center">
+<sub>README is generated from <code>course.toml</code> — edit the TOML, not this file. CI logic lives in <a href="https://github.com/ClosureScope/NotesCI">NotesCI</a>.</sub>
+</div>
