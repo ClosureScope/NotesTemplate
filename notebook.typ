@@ -8,6 +8,9 @@
   title: [课程标题],
   author: "Closure",
   figure-index: (enabled: true),
+  raw-text: (
+    custom-font: (font-code, font-hei),
+  ),
 )
 
 = 第一章

@@ -9,6 +9,8 @@
 #let font-hei = "Noto Sans SC"
 #let font-kai = "FandolKai"
 
+#let font-code = "JetBrains Mono"
+
 #let (
   // Math & Logic (Blues/Indigos)
   theorem,
